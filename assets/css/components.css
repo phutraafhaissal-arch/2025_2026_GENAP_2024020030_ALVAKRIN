@@ -1,0 +1,739 @@
+/* ==========================================================
+   COMPONENTS.CSS
+   Universitas Handayani Makassar
+   Premium UI V2
+========================================================== */
+
+/* ==========================================================
+   BUTTON
+========================================================== */
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:12px;
+
+    padding:16px 34px;
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+    border-radius:999px;
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    text-decoration:none;
+
+    transition:all .35s ease;
+
+}
+
+.btn i{
+
+    font-size:20px;
+
+}
+
+/* PRIMARY */
+
+.btn-primary{
+
+    background:linear-gradient(
+        135deg,
+        #2563EB,
+        #38BDF8
+    );
+
+    color:#fff;
+
+    box-shadow:0 15px 35px rgba(37,99,235,.35);
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 22px 45px rgba(37,99,235,.45);
+
+}
+
+/* OUTLINE */
+
+.btn-outline{
+
+    background:rgba(255,255,255,.04);
+
+    color:#fff;
+
+    border:1px solid rgba(255,255,255,.10);
+
+    backdrop-filter:blur(18px);
+
+}
+
+.btn-outline:hover{
+
+    background:#ffffff;
+
+    color:#0F172A;
+
+}
+
+/* ==========================================================
+   SECTION HEADER
+========================================================== */
+
+.section-header{
+
+    max-width:760px;
+
+    margin:0 auto 80px;
+
+    text-align:center;
+
+}
+
+.section-subtitle{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:10px 22px;
+
+    border-radius:999px;
+
+    background:rgba(37,99,235,.10);
+
+    color:#38BDF8;
+
+    border:1px solid rgba(56,189,248,.25);
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+}
+
+.section-subtitle i{
+
+    font-size:20px;
+
+}
+
+.section-title{
+
+    font-size:clamp(2.5rem,5vw,4rem);
+
+    font-weight:800;
+
+    line-height:1.15;
+
+    color:#fff;
+
+    margin-bottom:22px;
+
+}
+
+.section-description{
+
+    color:#94A3B8;
+
+    line-height:1.9;
+
+    font-size:1.08rem;
+
+}
+
+/* ==========================================================
+   CARD
+========================================================== */
+
+.card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:28px;
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:rgba(56,189,248,.35);
+
+    box-shadow:0 20px 60px rgba(0,0,0,.25);
+
+}
+
+/* ==========================================================
+   GLASS
+========================================================== */
+
+.glass{
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:28px;
+
+}
+
+/* ==========================================================
+   FORM
+========================================================== */
+
+.form-group{
+
+    margin-bottom:22px;
+
+}
+
+.form-control{
+
+    width:100%;
+
+    padding:17px 20px;
+
+    border-radius:18px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:rgba(255,255,255,.04);
+
+    color:#fff;
+
+    font-size:1rem;
+
+    transition:.3s;
+
+}
+
+.form-control::placeholder{
+
+    color:#94A3B8;
+
+}
+
+.form-control:focus{
+
+    outline:none;
+
+    border-color:#38BDF8;
+
+    box-shadow:0 0 0 4px rgba(56,189,248,.12);
+
+}
+
+/* textarea */
+
+textarea.form-control{
+
+    resize:none;
+
+    min-height:160px;
+
+}
+
+/* ==========================================================
+   BADGE
+========================================================== */
+
+.badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    background:rgba(56,189,248,.12);
+
+    color:#38BDF8;
+
+    border:1px solid rgba(56,189,248,.30);
+
+    font-size:.9rem;
+
+    font-weight:700;
+
+}
+
+/* ==========================================================
+   SOCIAL
+========================================================== */
+
+.social{
+
+    display:flex;
+
+    gap:14px;
+
+}
+
+.social a{
+
+    width:52px;
+
+    height:52px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    color:#fff;
+
+    background:rgba(255,255,255,.05);
+
+    transition:.35s;
+
+}
+
+.social a:hover{
+
+    background:#38BDF8;
+
+    color:#0F172A;
+
+    transform:translateY(-4px);
+
+}
+
+/* ==========================================================
+   FLOATING WHATSAPP
+========================================================== */
+
+.whatsapp{
+
+    position:fixed;
+
+    right:28px;
+
+    bottom:30px;
+
+    width:62px;
+
+    height:62px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#22C55E;
+
+    color:#fff;
+
+    font-size:28px;
+
+    box-shadow:0 15px 35px rgba(34,197,94,.35);
+
+    z-index:999;
+
+    transition:.35s;
+
+}
+
+.whatsapp:hover{
+
+    transform:translateY(-6px) scale(1.05);
+
+}
+
+/* ==========================================================
+   BACK TO TOP
+========================================================== */
+
+.back-top{
+
+    position:fixed;
+
+    right:30px;
+
+    bottom:110px;
+
+    width:56px;
+
+    height:56px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#2563EB;
+
+    color:#fff;
+
+    cursor:pointer;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.35s;
+
+    z-index:998;
+
+}
+
+.back-top.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+/* ==========================================================
+   LOADER
+========================================================== */
+
+.loader{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#07111F;
+
+    z-index:999999;
+
+}
+
+.loader.hidden{
+
+    opacity:0;
+
+    visibility:hidden;
+
+}
+
+.loader span{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    border:5px solid rgba(255,255,255,.12);
+
+    border-top-color:#38BDF8;
+
+    animation:spin 1s linear infinite;
+
+}
+
+@keyframes spin{
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/* ==========================================================
+   TOAST
+========================================================== */
+
+.toast{
+
+    position:fixed;
+
+    top:30px;
+
+    right:30px;
+
+    min-width:320px;
+
+    padding:18px 24px;
+
+    border-radius:20px;
+
+    background:#0F172A;
+
+    color:#fff;
+
+    border-left:5px solid #38BDF8;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+    transform:translateX(420px);
+
+    transition:.4s;
+
+    z-index:999999;
+
+}
+
+.toast.show{
+
+    transform:translateX(0);
+
+}
+
+/* ==========================================================
+   SCROLLBAR
+========================================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#081321;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#2563EB;
+
+    border-radius:999px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#38BDF8;
+
+}
+
+/* =====================================
+RIPPLE EFFECT
+===================================== */
+
+.btn{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.ripple{
+
+    position:absolute;
+
+    width:20px;
+
+    height:20px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.4);
+
+    transform:translate(-50%,-50%) scale(0);
+
+    animation:ripple .6s linear;
+
+}
+
+@keyframes ripple{
+
+    to{
+
+        transform:translate(-50%,-50%) scale(18);
+
+        opacity:0;
+
+    }
+
+}
+
+/*==================================================
+NEWS MODAL
+==================================================*/
+
+.news-modal{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(5,10,20,.82);
+
+    backdrop-filter:blur(12px);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.35s;
+
+    z-index:999999;
+
+}
+
+.news-modal.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.news-modal-content{
+
+    width:min(850px,92%);
+
+    max-height:85vh;
+
+    overflow:auto;
+
+    padding:45px;
+
+    border-radius:30px;
+
+    background:#0F172A;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    position:relative;
+
+    animation:newsPopup .35s ease;
+
+}
+
+.news-modal-content h2{
+
+    color:#fff;
+
+    margin-bottom:20px;
+
+}
+
+.news-modal-content img{
+
+    width:100%;
+
+    border-radius:22px;
+
+    margin-bottom:30px;
+
+}
+
+.news-modal-content p{
+
+    color:#CBD5E1;
+
+    line-height:2;
+
+    margin-bottom:18px;
+
+}
+
+.news-modal-close{
+
+    position:absolute;
+
+    top:20px;
+
+    right:20px;
+
+    width:48px;
+
+    height:48px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.news-modal-close:hover{
+
+    background:#38BDF8;
+
+    color:#07111F;
+
+}
+
+@keyframes newsPopup{
+
+    from{
+
+        transform:translateY(40px);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:translateY(0);
+
+        opacity:1;
+
+    }
+
+}

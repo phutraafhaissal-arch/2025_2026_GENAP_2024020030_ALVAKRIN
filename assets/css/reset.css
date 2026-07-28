@@ -1,0 +1,95 @@
+/* ================================
+   RESET
+================================ */
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+body {
+
+    font-family:
+        "Segoe UI",
+        Tahoma,
+        Geneva,
+        Verdana,
+        sans-serif;
+
+    background: var(--light);
+
+    color: var(--text);
+
+    overflow-x: hidden;
+
+    line-height: 1.7;
+
+}
+
+img {
+
+    width: 100%;
+    display: block;
+
+}
+
+a {
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+ul {
+
+    list-style: none;
+
+}
+
+button {
+
+    border: none;
+
+    background: none;
+
+    cursor: pointer;
+
+    font: inherit;
+
+}
+
+input,
+textarea,
+select {
+
+    font: inherit;
+
+    outline: none;
+
+    border: none;
+
+}
+
+section {
+
+    position: relative;
+
+}
+
+::selection {
+
+    background: var(--secondary);
+
+    color: var(--white);
+
+}

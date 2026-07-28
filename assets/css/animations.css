@@ -1,0 +1,203 @@
+/* ==========================================
+   ANIMATIONS
+========================================== */
+
+@keyframes scrollDown {
+
+    0% {
+
+        opacity: 0;
+
+        transform: translate(-50%,0);
+
+    }
+
+    50% {
+
+        opacity: 1;
+
+    }
+
+    100% {
+
+        opacity: 0;
+
+        transform: translate(-50%,18px);
+
+    }
+
+}
+
+@keyframes pulse {
+
+    0% {
+
+        transform: scale(1);
+
+    }
+
+    50% {
+
+        transform: scale(1.08);
+
+    }
+
+    100% {
+
+        transform: scale(1);
+
+    }
+
+}
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:1s ease;
+
+}
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/*=================================================
+REVEAL
+=================================================*/
+
+.reveal{
+
+    opacity:0;
+
+    transform:
+
+        translateY(70px);
+
+    transition:
+
+        all 1s cubic-bezier(.2,.8,.2,1);
+
+}
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:
+
+        translateY(0);
+
+}
+
+/*=================================================
+CURSOR GLOW
+=================================================*/
+
+#cursorGlow{
+
+    position:fixed;
+
+    width:320px;
+
+    height:320px;
+
+    border-radius:50%;
+
+    background:
+
+    radial-gradient(
+
+        rgba(56,189,248,.22),
+
+        transparent 70%
+
+    );
+
+    pointer-events:none;
+
+    transform:translate(-50%,-50%);
+
+    z-index:-1;
+
+    transition:
+
+        transform .08s linear;
+
+}
+
+/*====================================
+LIGHTBOX ANIMATION
+====================================*/
+
+.gallery-lightbox{
+
+    animation:fadeLightbox .35s ease;
+
+}
+
+.gallery-lightbox img{
+
+    animation:zoomLightbox .35s ease;
+
+}
+
+@keyframes fadeLightbox{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+@keyframes zoomLightbox{
+
+    from{
+
+        transform:scale(.9);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+/*==================================
+BODY LOADED
+==================================*/
+
+body{
+
+    opacity:0;
+
+    transition:opacity .5s ease;
+
+}
+
+body.loaded{
+
+    opacity:1;
+
+}
